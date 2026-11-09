@@ -1,76 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head><link rel="stylesheet" href="style.css">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cadastro de Voluntário</title>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pata Voluntária – Resgate e cuidado de animais</title>
+<meta name="description" content="A Pata Voluntária resgata animais de rua, busca lares temporários e organiza adoções em Belo Horizonte.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Cadastro de Voluntário</h1>
-    <nav>
-      <a href="index.html">Início</a> |
-      <a href="projetos.html">Projetos</a> |
-      <a href="cadastro.html">Cadastro</a>
-    </nav>
-  </header>
+<header><div class="wrap">
+  <a class="logo" href="index.html">🐾 Pata Voluntária</a>
+  <nav aria-label="Principal"><a href="index.html" aria-current="page">Início</a><a href="projetos.html">Projetos</a><a href="cadastro.html">Cadastro</a></nav>
+</div></header>
 
-  <main>
-    <h2>Formulário de Inscrição</h2>
-    <p>Preencha seus dados para participar de nossos projetos sociais.</p>
+<main>
+<div class="hero"><div class="wrap">
+  <div>
+    <h1>Todo animal merece um lar e quem cuide dele.</h1>
+    <p>Somos voluntários que resgatam cães e gatos em situação de rua, cuidamos deles e ajudamos a encontrar uma família. Entre na equipe ou ajude com uma doação.</p>
+    <a class="btn" href="cadastro.html">Quero ser voluntário</a>
+    <a class="btn alt" href="projetos.html#doar">Como doar</a>
+  </div>
+  <div class="tag"><img src="img.png" alt="Voluntários da Pata Voluntária com um animal resgatado" width="480" height="600"></div>
+</div></div>
 
-    <form action="#" method="post">
-      <label for="nome">Nome completo*</label><br>
-      <input type="text" id="nome" name="nome" required placeholder="Seu nome"><br><br>
+<section class="band"><div class="wrap">
+  <h2>Como você pode ajudar</h2>
+  <div class="ways">
+    <div><h3>Seja voluntário</h3><p>Resgate, lar temporário, eventos de adoção ou logística. Escolha onde pode ajudar.</p></div>
+    <div><h3>Faça uma doação</h3><p>Ração, medicamentos, cobertores ou qualquer valor por Pix.</p></div>
+    <div><h3>Divulgue</h3><p>Compartilhe os animais que buscam um lar. Uma indicação pode mudar uma vida.</p></div>
+  </div>
+</div></section>
 
-      <label for="email">E-mail*</label><br>
-      <input type="email" id="email" name="email" required placeholder="seu@exemplo.com"><br><br>
+<section><div class="wrap">
+  <h2>Sobre a organização</h2>
+  <p>A Pata Voluntária realiza resgates, arrecadação de doações e feiras de adoção, além de apoiar projetos educativos sobre guarda responsável. Nosso objetivo é fortalecer a comunidade por meio do trabalho voluntário.</p>
+</div></section>
 
-      <label for="cpf">CPF*</label><br>
-      <input type="text" id="cpf" name="cpf" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00"><br><br>
+<section class="band" id="contato"><div class="wrap contact">
+  <div>
+    <h2>Fale conosco</h2>
+    <p>Rua dos Carijós, 25, Centro<br>Belo Horizonte/MG</p>
+    <p>Telefone: (31) 91234-5678<br>E-mail: <a href="mailto:contato@patavoluntaria.org.br">contato@patavoluntaria.org.br</a></p>
+    <a class="btn" href="https://wa.me/5531912345678?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20Pata%20Volunt%C3%A1ria." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+  </div>
+  <iframe class="map" title="Mapa com a localização da Pata Voluntária" loading="lazy" src="https://maps.google.com/maps?q=Rua+dos+Carij%C3%B3s,+25,+Belo+Horizonte&amp;output=embed"></iframe>
+</div></section>
+</main>
 
-      <label for="telefone">Telefone*</label><br>
-      <input type="tel" id="telefone" name="telefone" required pattern="\d{2}\s?\d{4,5}-\d{4}" placeholder="11 91234-5678"><br><br>
-
-      <label for="nasc">Data de Nascimento*</label><br>
-      <input type="date" id="nasc" name="nasc" required><br><br>
-
-      <label for="cep">CEP*</label><br>
-      <input type="text" id="cep" name="cep" required pattern="\d{5}-\d{3}" placeholder="00000-000"><br><br>
-
-      <label for="endereco">Endereço*</label><br>
-      <input type="text" id="endereco" name="endereco" required placeholder="Rua, número e bairro"><br><br>
-
-      <label for="cidade">Cidade*</label><br>
-      <input type="text" id="cidade" name="cidade" required><br><br>
-
-      <label for="estado">Estado*</label><br>
-      <input list="ufs" id="estado" name="estado" required placeholder="UF">
-      <datalist id="ufs">
-        <option value="SP">
-        <option value="RJ">
-        <option value="MG">
-        <option value="RS">
-        <option value="BA">
-        <option value="PR">
-      </datalist><br><br>
-
-      <label>Áreas de interesse:</label><br>
-      <input type="checkbox" name="interesse" value="educacao"> Educação
-      <input type="checkbox" name="interesse" value="saude"> Saúde
-      <input type="checkbox" name="interesse" value="logistica"> Logística<br><br>
-
-      <label>
-        <input type="checkbox" name="termos" required> Confirmo que as informações são verdadeiras.
-      </label><br><br>
-
-      <button type="submit">Enviar</button>
-      <button type="reset">Limpar</button>
-    </form>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Organização Exemplo</p>
-  </footer>
+<footer><div class="wrap"><p>© 2026 Pata Voluntária. <a href="projetos.html">Conheça nossos projetos</a></p></div></footer>
 </body>
 </html>
